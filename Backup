@@ -1,0 +1,63 @@
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import { StyleSheet, Stylesheet1, Text, View, Image,Button,Alert } from 'react-native';
+import { Col, Row, Grid } from "react-native-easy-grid";
+export default function App() {
+  return (
+    <View style={styles.container}>
+    <Grid><Col style={{height:150}}>
+     <Image source={require("./assets/albion.png")}    style={{width: 200, height: 151, resizeMode: 'contain',
+    position: 'relative'}}></Image>
+    
+    <Col style={{height:150}} >
+      <Image source={require("./assets/builds.png")}    style={{width: 200, height: 151, resizeMode: 'contain',
+    position: 'relative'}}></Image>
+    </Col>
+    </Grid>
+    <Grid>
+    <Col> 
+      <Image source={require("./assets/begin.png")}    style={{width: 200, height: 151, resizeMode: 'contain',
+    position: 'relative'}}></Image>
+    </Col>
+    </Grid>
+    </View>
+  );
+}
+
+const textstyles= StyleSheet.create({
+  container: {
+    
+    textAlignVertical: 'top',
+    fontWeight: 'bold',
+    fontSize: 25,
+    color: '#007647',
+  }
+})
+const textstyles1= StyleSheet.create({
+  container: {
+    padding:3,
+    textAlignVertical: 'top',
+    fontWeight: 'bold',
+    fontSize: 18,
+    color: '#008753',
+  }
+})
+const textstyles2= StyleSheet.create({
+  container: {
+    padding:3,
+    textAlignVertical: 'top',
+    fontWeight: 'bold',
+    fontSize: 19,
+    color: '#9b1e12',
+  }
+})
+const styles = StyleSheet.create({
+  container: {
+    paddingTop: 65 ,
+    flex: 1,
+    backgroundColor: '#c96f53',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    
+  },
+});
